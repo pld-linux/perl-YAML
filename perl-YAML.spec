@@ -10,7 +10,7 @@ Name:		perl-YAML
 Version:	0.35
 Release:	3
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/I/IN/INGY/%{pdir}-%{version}.tar.gz
 # Source0-md5:	03f1c4446fae2bcc7d606b0b3ded0632
