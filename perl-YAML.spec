@@ -4,10 +4,10 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	YAML
 Summary:	YAML - YAML Ain't Markup Language (tm)
-#Summary(pl):	
+Summary(pl):	YAML - YAML nie jest jêzykiem znaczników
 Name:		perl-YAML
 Version:	0.35
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/I/IN/INGY/%{pdir}-%{version}.tar.gz
@@ -18,15 +18,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The YAML.pm module implements a YAML Loader and Dumper based on the YAML
-1.0 specification.
+The YAML.pm module implements a YAML Loader and Dumper based on the
+YAML 1.0 specification.
 
-YAML is a generic data serialization language that is optimized for human
-readability. It can be used to express the data structures of most modern
-programming languages.  (Including Perl!!!)
+YAML is a generic data serialization language that is optimized for
+human readability. It can be used to express the data structures of
+most modern programming languages.  (Including Perl!!!)
 
-# %description -l pl
-# TODO
+%description -l pl
+Modu³ YAML.pm jest implementacj± klas YAML Loader i Dumper bazuj±cych
+na specyfikacji YAML 1.0. YAML to jêzyk do serializacji ogólnych
+danych, zoptymalizowany pod wzglêdem czytelno¶ci dla cz³owieka. Mo¿e
+byæ u¿ywany do wyra¿ania struktur danych wiêkszo¶ci wspó³czesnych
+jêzyków programowania (w³±cznie z Perlem).
 
 %prep
 %setup -q -n %{pdir}-%{version}
@@ -47,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/*
 %{perl_sitelib}/*.pm
 %{perl_sitelib}/%{pdir}
-%{_bindir}/*
 %{_mandir}/man[13]/*
