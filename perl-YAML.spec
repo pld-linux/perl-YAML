@@ -3,7 +3,7 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	YAML
+%define		pdir	YAML
 Summary:	YAML - YAML Ain't Markup Language (tm)
 Summary(pl):	YAML - YAML nie jest jêzykiem znaczników
 Name:		perl-YAML
