@@ -17,25 +17,6 @@ Source0:	http://www.cpan.org/modules/by-authors/id/I/IN/INGY/%{pdir}-%{version}.
 URL:		http://www.yaml.org/spec/
 BuildRequires:	perl-devel >= 1:5.8.0
 %{?with_tests:BuildRequires:	perl-perldoc}
-BuildRequires:	perl-Algorithm-Annotate
-BuildRequires:	perl-Algorithm-Diff
-BuildRequires:	perl-Class-Autouse
-BuildRequires:	perl-Clone
-BuildRequires:	perl-Compress-Zlib
-BuildRequires:	perl-Data-Hierarchy
-BuildRequires:	perl-File-Type
-BuildRequires:	perl-FreezeThaw
-BuildRequires:	perl-IO-Digest
-BuildRequires:	perl-IO-Pager
-BuildRequires:	perl-Locale-Maketext-Lexicon
-BuildRequires:	perl-Locale-Maketext-Simple
-BuildRequires:	perl-Pod-Escapes
-BuildRequires:	perl-Pod-Simple
-BuildRequires:	perl-Regexp-Shellish
-BuildRequires:	perl-SVN-Mirror
-BuildRequires:	perl-SVN-Simple
-BuildRequires:	perl-TimeDate
-BuildRequires:	perl-URI
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
