@@ -7,16 +7,19 @@
 Summary:	YAML - YAML Ain't Markup Language (tm)
 Summary(pl):	YAML - YAML nie jest jêzykiem znaczników
 Name:		perl-YAML
-Version:	0.39
+Version:	0.55
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/I/IN/INGY/%{pdir}-%{version}.tar.gz
-# Source0-md5:	b8a49f49cb0ee6d9698807fb3f606922
+# Source0-md5:	2a01bcd5d980569577b580aef0c98ed4
 URL:		http://www.yaml.org/spec/
 BuildRequires:	perl-devel >= 1:5.8.0
-%{?with_tests:BuildRequires:	perl-perldoc}
+%if %{with tests}
+BuildRequires:	perl-perldoc
+BuildRequires:	perl-Spiffy >= 0.29
+%endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
