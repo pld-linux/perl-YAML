@@ -7,8 +7,8 @@
 Summary:	YAML - YAML Ain't Markup Language (tm)
 Summary(pl):	YAML - YAML nie jest jêzykiem znaczników
 Name:		perl-YAML
-Version:	0.58
-Release:	1
+Version:	0.62
+Release:	0.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
