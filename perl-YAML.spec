@@ -13,7 +13,7 @@ Release:	0.1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/I/IN/INGY/%{pdir}-%{version}.tar.gz
-# Source0-md5:	aa5ac653057914ca995dd74de8212ebc
+# Source0-md5:	4be042a043ec520074b0ab6f7ca0bded
 URL:		http://www.yaml.org/spec/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
