@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	YAML
 Summary:	YAML - YAML Ain't Markup Language (tm)
-Summary(pl):	YAML - YAML nie jest jêzykiem znaczników
+Summary(pl.UTF-8):   YAML - YAML nie jest jÄ™zykiem znacznikÃ³w
 Name:		perl-YAML
 Version:	0.62
 Release:	1
@@ -32,12 +32,12 @@ YAML is a generic data serialization language that is optimized for
 human readability. It can be used to express the data structures of
 most modern programming languages.  (Including Perl!!!)
 
-%description -l pl
-Modu³ YAML.pm jest implementacj± klas YAML Loader i Dumper bazuj±cych
-na specyfikacji YAML 1.0. YAML to jêzyk do serializacji ogólnych
-danych, zoptymalizowany pod wzglêdem czytelno¶ci dla cz³owieka. Mo¿e
-byæ u¿ywany do wyra¿ania struktur danych wiêkszo¶ci wspó³czesnych
-jêzyków programowania (w³±cznie z Perlem).
+%description -l pl.UTF-8
+ModuÅ‚ YAML.pm jest implementacjÄ… klas YAML Loader i Dumper bazujÄ…cych
+na specyfikacji YAML 1.0. YAML to jÄ™zyk do serializacji ogÃ³lnych
+danych, zoptymalizowany pod wzglÄ™dem czytelnoÅ›ci dla czÅ‚owieka. MoÅ¼e
+byÄ‡ uÅ¼ywany do wyraÅ¼ania struktur danych wiÄ™kszoÅ›ci wspÃ³Å‚czesnych
+jÄ™zykÃ³w programowania (wÅ‚Ä…cznie z Perlem).
 
 %prep
 %setup -q -n %{pdir}-%{version}
