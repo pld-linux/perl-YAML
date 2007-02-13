@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	YAML
 Summary:	YAML - YAML Ain't Markup Language (tm)
-Summary(pl.UTF-8):   YAML - YAML nie jest językiem znaczników
+Summary(pl.UTF-8):	YAML - YAML nie jest językiem znaczników
 Name:		perl-YAML
 Version:	0.62
 Release:	1
