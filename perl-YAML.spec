@@ -1,3 +1,5 @@
+# TODO
+# - YAML::Types depends on B::Deparse therefore the perl-devel dep)
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
@@ -17,10 +19,11 @@ Source0:	http://www.cpan.org/modules/by-authors/id/I/IN/INGY/%{pdir}-%{version}.
 URL:		http://www.yaml.org/spec/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
-BuildRequires:	perl-perldoc
 BuildRequires:	perl-Spiffy >= 0.29
+BuildRequires:	perl-perldoc
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl-devel
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +33,7 @@ YAML 1.0 specification.
 
 YAML is a generic data serialization language that is optimized for
 human readability. It can be used to express the data structures of
-most modern programming languages.  (Including Perl!!!)
+most modern programming languages. (Including Perl!!!)
 
 %description -l pl.UTF-8
 Moduł YAML.pm jest implementacją klas YAML Loader i Dumper bazujących
