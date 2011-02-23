@@ -9,13 +9,13 @@
 Summary:	YAML - YAML Ain't Markup Language (tm)
 Summary(pl.UTF-8):	YAML - YAML nie jest językiem znaczników
 Name:		perl-YAML
-Version:	0.70
-Release:	3
+Version:	0.72
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
-# Source0-md5:	425973520e8fd84beb6cb95de29f3534
+Source0:	http://www.cpan.org/modules/by-module/YAML/ADAMK/%{pdir}-%{version}.tar.gz
+# Source0-md5:	35f8107367a5ba8c50965eca0ea7c370
 URL:		http://www.yaml.org/spec/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
@@ -59,8 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # this pulls dozen of Test::* deps which we don't want
-rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/Test/YAML.pm
-rm -f $RPM_BUILD_ROOT%{_mandir}/man3/Test::YAML.3pm*
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Test/YAML.pm
+%{__rm} $RPM_BUILD_ROOT%{_mandir}/man3/Test::YAML.3pm*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
