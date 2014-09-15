@@ -56,10 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-# this pulls dozen of Test::* deps which we don't want
-%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Test/YAML.pm
-%{__rm} $RPM_BUILD_ROOT%{_mandir}/man3/Test::YAML.3pm*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
