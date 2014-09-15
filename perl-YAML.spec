@@ -56,6 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/YAML.pod
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
