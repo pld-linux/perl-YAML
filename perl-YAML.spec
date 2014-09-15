@@ -21,6 +21,7 @@ BuildRequires:	perl-ExtUtils-MakeMaker >= 6.59
 BuildRequires:	perl-devel >= 1:5.8.1
 %if %{with tests}
 BuildRequires:	perl-Spiffy >= 0.29
+BuildRequires:	perl-Test-YAML
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-devel
