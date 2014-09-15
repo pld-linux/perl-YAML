@@ -1,5 +1,3 @@
-# TODO
-# - YAML::Types depends on B::Deparse therefore the perl-devel dep)
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
@@ -24,7 +22,6 @@ BuildRequires:	perl-Spiffy >= 0.29
 BuildRequires:	perl-Test-YAML
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-devel
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
