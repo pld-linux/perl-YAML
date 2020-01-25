@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	YAML
 Summary:	YAML - YAML Ain't Markup Language (tm)
 Summary(pl.UTF-8):	YAML - YAML nie jest językiem znaczników
