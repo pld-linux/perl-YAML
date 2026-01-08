@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	YAML
 Summary:	YAML - YAML Ain't Markup Language (tm)
@@ -13,7 +13,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	https://www.cpan.org/modules/by-module/YAML/%{pdir}-%{version}.tar.gz
 # Source0-md5:	a7ab8afef4d6491806942bd95420021f
-URL:		https://metacpan.org/release/YAML
+URL:		https://metacpan.org/dist/YAML
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.59
 BuildRequires:	perl-devel >= 1:5.8.1
 %if %{with tests}
@@ -47,6 +47,7 @@ języków programowania (włącznie z Perlem).
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
+
 %{__make}
 
 %{?with_tests:%{__make} test}
